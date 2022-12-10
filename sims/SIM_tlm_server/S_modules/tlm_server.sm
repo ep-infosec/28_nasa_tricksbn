@@ -1,0 +1,25 @@
+/*
+PURPOSE:
+    (Tlm Server)
+LIBRARY DEPENDENCY:
+    (
+        (tlm_server/src/tlm_server.cpp)
+    )    
+*/
+
+##include "tlm_server/include/tlm_server.hh"
+
+class TelemetryServer : public Trick::SimObject
+{
+public:
+
+    TelemetryServerConfig configData;
+    TelemetryServerState stateData;
+
+    TelemetryServer() 
+    {
+        ("initialization") InitTlmServer( &configData );
+        (0.01, "scheduled") RunTlmServer( &stateData );
+        ("shutdown") ShutdownTlmServer( &stateData );
+    }
+};

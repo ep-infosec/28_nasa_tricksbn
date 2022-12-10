@@ -1,0 +1,15 @@
+[
+        {
+            "messageId":"0x7e6a",
+            "flowDirection":2,
+            "cfsStructureType":"Bittylicious_c",
+            "members":
+            [
+                { "cfsVar":"b[0].e[0].x", "cfsType":"float", "trickVar":"dyn.cannon.pos[0]", "trickType":"double" },
+                { "cfsVar":"c[1]", "cfsType":"int16", "trickVar":"dyn.cannon.acc[1]", "trickType":"double" },
+                { "cfsVar":"b[0].e[0].y", "cfsType":"float", "trickVar":"dyn.cannon.impact", "trickType":"int" },
+                { "cfsVar":"e", "cfsType":"int8", "trickVar":"dyn.cannon.vel[1]", "trickType":"double" },
+                { "cfsVar":"c[0]", "cfsType":"int16", "trickVar":"dyn.cannon.pos[1]", "trickType":"double" }
+            ]
+        }
+]
